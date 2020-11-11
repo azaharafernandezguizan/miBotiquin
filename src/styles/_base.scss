@@ -1,0 +1,33 @@
+@import '_vars.scss';
+
+* {
+  font-family: 'neotech', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif';
+}
+
+router-outlet~* {
+  width: calc(100% - 3rem);
+}
+
+body #wrapper {
+    background-color: $color-green;
+}
+
+.btn{
+  border-radius: 4px;
+  min-height: 5vh;
+  min-width: 7vw;
+}
+
+.btn-primary{
+  background-color:$color-brown;
+  color:$color-tourqueise;
+  font-size:20px;
+}
+
+.btn-primary:hover{
+  background-color:$color-paleBlue;
+}
+
+.btn:disabled{
+  background-color:$color-paleGreenYellow;
+}

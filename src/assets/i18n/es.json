@@ -1,0 +1,18 @@
+{
+    "common":{
+        "firstAidKit" : "Botiquín",
+        "itHurts": "Me duele",
+        "myPharmacy": "Mi farmacia"
+    },
+    "firstAidKit":{
+        "navBarTitle": "¿Qué tiene que llevar mi botiquín?"
+    },
+    "itHurts":{
+        "navBarTitle": "Me duele...",
+        "windowTitle": "¿Qué te duele?",
+        "medicine": "Tómate un "
+    },
+    "myPharmacy":{
+        "navBarTitle": "Mi farmacia más cercana..."
+    }
+}

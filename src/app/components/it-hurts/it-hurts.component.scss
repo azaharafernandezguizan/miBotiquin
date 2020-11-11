@@ -1,0 +1,59 @@
+@import "../../../styles/vars";
+.containerDiv {
+    padding: 10%;
+
+    h2 {
+        margin-top: 7%;
+        color: $color-brown;
+        text-align: center;
+        background-color: $color-paleBlue;
+        font-size: 2em;
+    }
+}
+
+.cssanimation{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg,$color-brown, $color-white, $color-brown);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.optionsDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+}
+
+@media screen and (max-device-width: 640px){
+    .optionsDiv {
+        display: flex;
+        flex-direction: column;
+
+        button{
+            margin-bottom:2%;
+        }
+    }
+
+    .containerDiv{
+        h2{
+            font-size:1.5em;
+        }
+    }
+}

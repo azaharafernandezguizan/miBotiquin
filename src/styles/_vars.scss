@@ -1,0 +1,13 @@
+@import '_colors.scss';
+/* Fonts */
+$general-font: Helvetica,
+sans-serif;
+
+/* Containers */
+$margin-left-general-container: 20%;
+$shadow: 2px 2px 2px 0 rgba(117, 54, 54, 0.2);
+
+/* Inputs */
+$border-input: 1px solid $color-paleGreenYellow;
+$padding-input: 0.2em;
+$margin-input: 0 0.5em 0 0.5em;

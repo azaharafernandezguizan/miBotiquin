@@ -1,0 +1,11 @@
+#mapid {
+    width: 90%;
+    height: 60%;
+    margin: 10% 5%;
+    box-shadow: 5px 5px 5px #888;
+    }
+
+.leaflet-layer{
+    max-height: 60vh;
+    overflow-y: scroll;
+}

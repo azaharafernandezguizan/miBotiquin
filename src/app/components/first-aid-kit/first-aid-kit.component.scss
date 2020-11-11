@@ -1,0 +1,91 @@
+@import "../../../styles/vars";
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 1.5em;
+    margin-left: 10%;
+}
+
+.gallery-container-list {
+    display: grid;
+    width: 90%;
+    min-height: 60vh;
+    grid-template-columns: repeat(auto-fill, 20%);
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
+}
+
+.gallery-container-list li{
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    transition: background 1s ease-in-out;
+
+    img {
+        display:block;
+    }
+
+    h4{
+        font-weight:bold;
+        display:block;
+        padding: 1%;
+        color:$color-black;
+    }
+
+    .overlay{
+        padding: 1%;
+        color:$color-black;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(178,220,235,1);
+        background: -moz-linear-gradient(left, rgba(178,220,235,1) 0%, rgba(144,202,224,1) 38%, rgba(122,191,217,1) 49%, rgba(90,175,206,1) 65%, rgba(67,163,199,1) 88%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(178,220,235,1)), color-stop(38%, rgba(144,202,224,1)), color-stop(49%, rgba(122,191,217,1)), color-stop(65%, rgba(90,175,206,1)), color-stop(88%, rgba(67,163,199,1)));
+        background: -webkit-linear-gradient(left, rgba(178,220,235,1) 0%, rgba(144,202,224,1) 38%, rgba(122,191,217,1) 49%, rgba(90,175,206,1) 65%, rgba(67,163,199,1) 88%);
+        background: -o-linear-gradient(left, rgba(178,220,235,1) 0%, rgba(144,202,224,1) 38%, rgba(122,191,217,1) 49%, rgba(90,175,206,1) 65%, rgba(67,163,199,1) 88%);
+        background: -ms-linear-gradient(left, rgba(178,220,235,1) 0%, rgba(144,202,224,1) 38%, rgba(122,191,217,1) 49%, rgba(90,175,206,1) 65%, rgba(67,163,199,1) 88%);
+        background: linear-gradient(to right, rgba(178,220,235,1) 0%, rgba(144,202,224,1) 38%, rgba(122,191,217,1) 49%, rgba(90,175,206,1) 65%, rgba(67,163,199,1) 88%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2dceb', endColorstr='#43a3c7', GradientType=1 );
+    }
+}
+
+.gallery-container-list li:hover{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+        opacity: 1;
+    }
+
+    img{
+        display:none;
+    }
+}
+
+.gallery-container-list-image {
+    width: 60%;
+}
+
+
+@media screen and (max-device-width: 640px){
+ .gallery-container-list{
+    display:flex;
+    flex-direction:column;
+
+    li{
+        img{
+            min-height:25vh;
+        }
+    
+        .overlay{
+            min-height:25vh;
+            width:100%;
+        }
+    }
+ }
+}

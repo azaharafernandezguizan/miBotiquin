@@ -1,0 +1,13 @@
+<div class="containerDiv">
+    <div class="gallery-container">
+        <ul class="gallery-container-list">
+            <li *ngFor="let item of firstAidItems">
+                <h4>{{item.name}}</h4>
+                <img class="gallery-container-list-image" src={{item.src}} alt={{item.name}}>
+                <div class="overlay">
+                    <label>{{item.description}}</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

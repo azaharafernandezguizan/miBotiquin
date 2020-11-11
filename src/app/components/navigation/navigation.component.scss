@@ -1,0 +1,17 @@
+@import "../../../styles/vars";
+
+.navigationBar{
+    background-color: $color-brown;
+    height: 5vh;
+    color: $color-tourqueise;
+    display: flex;
+    align-items: center;
+    box-shadow: $shadow;
+    justify-content: space-between;
+    padding: 0vh 3vh;
+
+    label {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}

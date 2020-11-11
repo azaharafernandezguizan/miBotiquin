@@ -1,0 +1,41 @@
+@import "../../../styles/vars";
+
+.welcomeContainerDiv {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .welcomeImageDiv {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+
+        img {
+            height: 60vh;
+        }
+
+        a {
+            font-size: 8px;
+            color: $color-brown;
+        }
+    }
+
+    button {
+        margin-bottom: 2vh;
+        width: 20%;
+    }
+}
+
+@media screen and (max-device-width: 640px){
+    .welcomeContainerDiv{
+        .welcomeImageDiv {
+            img{
+                height: 40vh;
+            }
+        }
+        button {
+            width: 60%;
+        }
+    }
+}
